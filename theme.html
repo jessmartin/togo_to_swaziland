@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/images/favicon.png" type="image/x-png">
+    <title>{PageTitle}</title>
+      
+      
+<meta name="color:Headers" content="#000"/>
+<meta name="color:Links" content="#000"/>
+<meta name="color:Sidebar" content="#fff"/>
+<meta name="color:Body" content="#000"/>
+<meta name="color:PostInfo" content="#999"/>
+
+<meta name="number:Theme width" content="500"/>
+
+<style type="text/css">
+* {padding:0;margin:0;}
+img {border:0;}
+.clear {clear:both;font-size:5px;}
+.left {float:left;}
+.right {float:right;}
+.text-right {text-align:right;}
+.center {text-align:center;}
+.small {font-size:.857em !important;} /* 12px */
+.xsmall {font-size:.786em !important;} /* 11px */
+.xxsmall {font-size:9px;}
+.normal {font-size:12px !important;}
+.big {font-size:14px !important;}
+.bigger {font-size:16px !important;}
+.black {color:#000;}
+.green1,.green1:hover {color:#7ba709;}
+.green2,.green2:hover {color:#6f9904;}
+.darkgray {color:#333;}
+.strong {font-weight:bold;}
+.absolute-right {position:absolute;top:0;right:0;}
+.white {color:#fff;}
+.red {color:#f00;}
+
+header,hgroup,footer,aside,nav,article,section {display:block;}
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      FontSite Inc.
+ * License URL: http://www.fontspring.com/fflicense/fontsite
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'Fette1451Mittelschrift';
+    src: url('/themes/togo/FetteMittelschrift-webfont.eot');
+    src: local('☺'), url('/themes/togo/FetteMittelschrift-webfont.woff') format('woff'), url('/themes/togo/FetteMittelschrift-webfont.ttf') format('truetype'), url('/themes/togo/FetteMittelschrift-webfont.svg#webfontE5eEpGkO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Jeff Levine Fonts
+ * License URL: http://www.fontspring.com/fflicense/jeff-levine
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'EckhardtFreehandJNLRegular';
+    src: url('/themes/togo/eckhardtfreehand-webfont.eot');
+    src: local('☺'), url('/themes/togo/eckhardtfreehand-webfont.woff') format('woff'), url('/themes/togo/eckhardtfreehand-webfont.ttf') format('truetype'), url('/themes/togo/eckhardtfreehand-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background:#28171C;
+    color:{color:Body};
+    font-family:"Lucida Sans","Lucida Grande","Lucida Sans Unicode",Tahoma,"Helvetica Neue",Arial,Helvetica;
+    font-size:.875em; /* 14px */
+}
+
+a {
+    color:{color:Links};
+    text-decoration:underline;
+}
+
+.container {
+    background:url(/themes/togo/wood.jpg) repeat;
+    margin:20px auto;
+    padding:0 20px 70px;
+    position:relative;
+    width:960px;
+}
+
+    .cw {
+        bottom:-70px;
+        color:#fff;
+        font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:1.5em;
+        padding-bottom:20px;
+        position:absolute;
+        text-align:center;
+        text-transform:uppercase;
+        width:960px;
+    }
+    
+        .cw a {
+            color:#fff;
+            text-decoration:none;
+        }
+        
+            .cw a:hover {
+                text-decoration:underline;
+            }
+
+    article header h1 {
+        color:{color:Body};
+        font-family:EckhardtFreehandJNLRegular,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:2em;
+        font-weight:normal;
+        line-height:.75em;
+        padding-top:15px;
+    }
+
+        article header h1 a {
+            color:{color:Headers};
+            text-decoration:none;
+        }
+        
+        article header h1 a:hover {
+        }
+
+header#page_header {
+}
+
+.ticket {
+    background:url(/themes/togo/header.png) no-repeat;
+    font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+    font-size:1.43em;
+    height:312px;
+    padding:57px 45px 0;
+    width:887px;
+}
+
+    .ticket a {
+        display:block;
+        height:27px;
+        overflow:hidden;
+        text-decoration:none;
+        text-transform:uppercase;
+        width:335px;
+    }
+
+header#page_header hgroup {
+    padding:20px 0 10px;
+}
+
+    header#page_header hgroup h1 {
+        font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:3em;
+        font-weight:normal;
+        line-height:1em;
+        text-align:center;
+        filter:dropshadow(color=#925935,offX=2,offY=2);
+        text-shadow:1px 1px 3px rgba(0,0,0,.5);
+        text-transform:uppercase;
+    }
+
+        header#page_header hgroup h1 a {
+            color:#fff;
+            text-decoration:none;
+        }
+        
+        header#page_header hgroup h1 a:hover {
+            text-decoration:none;
+        }
+
+    header#page_header hgroup h2 {
+        color:#000;
+        font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:1.5em;
+        font-weight:normal;
+        line-height:1em;
+        margin:0;
+        padding-top:10px;
+        text-align:center;
+    }
+
+.header_image img {
+    max-width:250px;
+}
+
+.content {
+    margin-top:-85px;
+    overflow:hidden;
+}
+
+nav {
+    margin-left:15px;
+    padding:0 0 20px;
+    width:430px;
+}
+
+    nav li {
+        display:inline-block;
+        font-family:EckhardtFreehandJNLRegular,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:1.5em;
+        font-weight:bold;
+        list-style:none;
+        margin-top:0; /* override default */
+        margin-right:20px;
+        text-transform:uppercase;
+    }
+    
+        nav li a {
+            color:{color:Links};
+            text-decoration:none;
+        }
+
+nav#navigation ul li a.current {
+}
+
+
+form.search input.text {
+    font-size: 12px;
+    padding: 2px 2px 2px 20px;
+    border: 1px solid #ccc;
+    background:#fff url('/images/icons/search16.png') no-repeat 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+aside#sidebar {
+    color:{color:Sidebar};
+    float:right;
+    width:250px;
+}
+
+    aside#sidebar a {
+        color:{color:Links};
+        text-decoration:none;
+    }
+    
+    aside#sidebar a:hover {
+        text-decoration:underline;
+    }
+
+aside#sidebar section {
+    display:block;
+    padding:15px 0;
+}
+
+    aside section#profile {
+    }
+
+    aside#sidebar section h1 {
+        background:url(/themes/togo/sidebar-frame.png) no-repeat;
+        font-family:"Lucida Sans","Lucida Sans Unicode", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+        font-size:1.143em;
+        height:30px;
+        line-height:30px;
+        overflow:hidden;
+        text-align:center;
+        text-transform:uppercase;
+        width:193px;
+    }
+    
+        aside section#profile h1 {
+            background:none;
+            height:auto;
+            text-align:left;
+            width:auto;
+        }
+    
+    aside#sidebar section ul li {
+        background:url(/themes/togo/tag-line.png) bottom center no-repeat;
+        color:#000;
+        font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:1.143em;
+        list-style: none;
+        line-height:1.2em;
+        margin-top:5px;
+        padding:3px 0 8px;
+        text-align:center;
+        text-transform:uppercase;
+        width:193px;
+    }
+    
+    
+    aside#sidebar section div.archive_list div.archive_year {
+      background:url(/themes/togo/tag-line.png) bottom center no-repeat;
+      color:#000;
+      font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+      font-size:1.143em;
+      line-height:1.2em;
+      margin-top:5px;
+      padding:3px 0 8px;
+      text-align:center;
+      text-transform:uppercase;
+      width:193px;       
+    }
+    
+    aside#sidebar section div.archive_list div.archive {
+        margin-bottom:5px;        
+    }
+    
+    aside#sidebar section div.archive_list div.inner {
+      margin-left:10px;
+      margin-bottom:7px;
+    }
+    
+        aside#sidebar section ul li a, aside#sidebar section div.archive_list a {
+            color:#000;
+        }
+        
+        aside#sidebar section ul li:last-child, aside#sidebar section div.archive_list div:last-child {
+            background:none;
+        }
+        
+        #more-tags-listing {
+            margin-top:-16px;
+        }
+    
+    .profile_image {
+        background:#fff;
+        -moz-box-shadow:0 0 5px rgba(0,0,0,.75);
+        -webkit-box-shadow:0 0 5px rgba(0,0,0,.75);
+        box-shadow:0 0 5px rgba(0,0,0,.75);
+        padding:10px;
+    }
+    
+    .profile p {
+        line-height:1.5em;
+        padding-top:5px;
+    }
+    
+    .external {
+        padding-top:10px;
+    }
+
+#search {
+    padding:15px 0;
+}
+
+    #searchbox {
+        background:#fff;
+        border:solid 1px #9D9D9D;
+        -moz-border-radius:0;
+        -webkit-border-radius:0;
+        border-radius:0;
+        color:#000;
+        font-size:14px;
+        padding:3px 5px;
+        width:165px;
+    }
+
+section#search_results {
+    background:#fff;
+    padding:10px 20px;
+    margin-bottom:35px;
+}
+
+    section#search_results .submit {
+        font-size:.875em;
+        font-weight:bold;
+        height:auto;
+        margin-top:5px;
+        padding:3px 10px;
+    }
+
+    section#search_results h1,section#filed_under h1 {
+        color:{color:Headers};
+        font-family:EckhardtFreehandJNLRegular,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:3em;
+        font-weight:normal;
+        line-height:1em;
+    }
+    
+    section#filed_under h1 {
+        font-size:2em;
+        margin-bottom:25px;
+    }
+    
+    section#search_results ul {}
+        
+        section#search_results li {
+            display:inline-block;
+            font-size:.786em;
+            list-style:none;
+            margin-right:5px;
+        }
+        
+    .back_to_blog {
+        display:block;
+        font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:1.25em;
+        font-weight:bold;
+        margin-bottom:15px;
+    }
+        
+        .back_to_blog a {
+            text-decoration:none;
+        }
+
+.profile-link {
+    color:{color:Headers} !important;
+}
+
+section#contributors li a:first-child {
+padding-right:3px;
+text-decoration:none;
+}
+
+    section#contributors li a img {
+        background:#fff;
+        -moz-box-shadow:0 0 3px rgba(0,0,0,.3);
+        -webkit-box-shadow:0 0 3px rgba(0,0,0,.3);
+        box-shadow:0 0 3px rgba(0,0,0,.3);
+        height:20px;
+        padding:2px;
+        vertical-align:middle;
+        width:20px;
+    }
+    
+    section#contributors li a {
+        vertical-align:middle;
+    }
+    
+    section#subscriptions {
+        padding-bottom:3px !important;
+        font-size:1.143em;
+        line-height:.75em;   
+    }
+
+        section#subscriptions h1 {
+            padding-bottom:5px;
+        }
+
+    section#rss {
+        padding-top:3px !important;
+    }
+
+    section#subscriptions a {
+        font-size:1em;
+        height:14px;
+    }
+
+    section#rss a {
+        display:block;
+        font-size:1.143em;
+        line-height:.75em;
+        height:14px;
+        padding-left:18px;
+    }
+
+    section#subscriptions .subscribe-site {
+        background:url(/images/favicon.png) no-repeat -1px -1px;
+    }
+
+    section#subscriptions .subscribe-site div {
+        padding-left:18px;
+    }
+
+    section#rss a {
+        background:url(/images/feed-icon-14x14.png) no-repeat -1px -1px;
+    }
+
+section#statistics {
+    font-size: 10px;
+}
+
+section#statistics strong {
+}
+
+section#tags li.selected a {
+    font-weight:bold;
+}
+
+    section#tags li.selected a:hover {
+        cursor:pointer;
+    }
+    
+section#fans {
+    padding-top:15px;
+}
+
+    section#fans h1 {
+        padding-bottom:0;
+    }
+
+    section#fans li {
+        list-style:none;
+    }
+
+        section#fans li a img {
+            background:#fff;
+            border:solid 1px #9D9D9D;
+            -moz-box-shadow:0 0 3px rgba(0,0,0,.3);
+            -webkit-box-shadow:0 0 3px rgba(0,0,0,.3);
+            box-shadow:0 0 3px rgba(0,0,0,.3);
+            height:20px;
+            margin-right:3px;
+            padding:2px;
+            vertical-align:middle;
+            width:20px;
+        }
+        
+        section#fans li a {
+            font-size:1em;
+            text-decoration:none;
+            vertical-align:middle;
+        }
+
+
+article header aside.sms {
+    font-size: 11px;
+}
+
+footer section.locations h1 {
+    font-weight: normal;
+    line-height: 21px;
+    margin-top: 0px;
+}
+
+input, select, textarea {
+    font-size: 1.6em;
+    line-height:1.3em !important;
+    padding: 5px;
+}
+
+input[type='text'], input[type='password'], select, textarea {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+input[type='button'], input[type='submit'] {
+    height: 2em;
+    font-size: 1.4em;
+    color: #000;
+    margin-top: 10px;
+}
+
+section.share {
+    margin-bottom: 18px;
+    padding-top:25px;
+}
+
+#post_column {
+    float:left;
+    margin-left:17px;
+    width:650px;
+}
+        
+        #post_column .body a {
+            color:{color:Links};
+        }
+        
+        #post_column a:hover {
+        }
+
+    div#articles {
+    }
+    
+        article {
+            background:#fff;
+            -moz-box-shadow:0 0 7px rgba(0,0,0,.5);
+            -webkit-box-shadow:0 0 7px rgba(0,0,0,.5);
+            box-shadow:0 0 7px rgba(0,0,0,.5);
+            margin-bottom:45px;
+            padding:0 10px {block:Page}10px{Else}0{/block:Page} 20px;
+            position:relative;
+        }
+        
+    {block:ShowOrList}
+        .post-contents {
+            float:left;
+            width:500px;
+        }
+    {/block:ShowOrList}
+        
+        .post-info {
+            float:right;
+            padding-top:25px;
+            width:100px;
+        }
+        
+        .post-meta {
+            padding-top:25px;
+        }
+        
+            .post-meta h1 {
+                font-size:1em;
+                font-weight:normal;
+                padding-bottom:15px;
+            }
+        
+            article header {
+            }
+            
+            article header section {
+                min-height:40px;
+                padding-top:17px;
+            }
+            
+            article header aside.sms {
+                float:left;
+                padding-top:10px;
+            }
+        
+        div.editbox {
+            height:16px;
+            position:absolute;
+            top:0;
+            visibility:hidden;
+        }
+        
+            div.editbox ul.mini_commands {
+                margin-top:0;
+            }
+            
+                ul.mini_commands li a {
+                    color:{color:Links};
+                }
+            
+            article:hover div.editbox {
+                visibility:visible;
+            }
+            
+        div.fav_star {
+            margin-top:1px;
+        }
+            
+        article div.body {
+            font-family:Georgia, "Times New Roman", Times, serif;
+            padding-top:10px;
+        }
+        
+            article div.body div.inner {
+                line-height:1.75em;
+            }
+            
+                article div.body div.inner > :first-child {
+                    margin-bottom:0;
+                    margin-top:0;
+                }
+                
+                article div.body div.inner > p:first-child {
+                    /* margin-top:15px; */
+                }
+                
+                article div.body p, article div.body blockquote {
+                    margin:15px 0 18px;
+                }
+                
+                article div.body div.posterousGalleryMainDiv {
+                    margin:0 0 15px;
+                }
+                
+                div.posterousVideoMainDiv {
+                    margin:0;
+                }
+                
+                .posterousGalleryMainDiv a.posterousGalleryMainlink {
+                    text-decoration:none !important;
+                }
+                
+                article div.body div.inner a {
+                    text-decoration:underline;
+                }
+                
+                    article div.body div.inner a:hover {
+                    }
+                    
+                    article div.body div.inner ul,article div.body div.inner ol {
+                        padding-bottom:5px;
+                        padding-left:30px;
+                    }
+                
+                .galleryLabel {
+                    color:{color:Body};
+                }
+                    
+                .inner blockquote {
+                    border-left:solid 4px #eee !important;
+                }
+                
+        article footer {
+            margin-top:10px;
+            position:relative;
+        }
+
+            footer section {
+                margin-bottom:10px;
+            }
+            
+                footer section.author {
+                    color:{color:PostInfo};
+                    font-size:.786em;
+                    padding-bottom:10px;
+                }
+                
+                    footer section.author a {
+                        color:{color:PostInfo} !important;
+                    }
+                
+                    footer section.author h1 {
+                        display:inline;
+                        font-size:1em;
+                        font-weight:normal;
+                    }
+                    
+        .comments_box h1 {
+            font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+            font-size:1.25em !important;
+        }
+                    
+        footer section.comments_box {
+            margin-top:15px;
+            padding:10px;
+        }
+
+            footer section.comments h1 {
+                font-size:.857em;
+                font-weight:normal;
+            }
+            
+                footer section.comments h1 a {
+                    text-decoration:none;
+                }
+                
+            div.comment_value input[type="text"], div.comment_value textarea {
+                width:470px;
+            }
+            
+            div.comment_none_yet_msg {
+                font-style:italic;
+                font-weight:normal;
+                margin-top:5px;
+            }
+            
+                div.comment_none_yet_msg,div.commentunit {
+                    color:{color:Body};
+                }
+            
+            .commentunit .comment_value label {
+                color:{color:Body} !important;
+            }
+            
+            footer section.comments section h1 {
+                font-size:1em;
+                font-weight:bold;
+            }
+            div.comment {
+            }
+            
+            div.comment b {
+                font-weight:normal;
+            }
+
+
+            div.comment_label {
+                padding-top: 2px;
+                margin-top: 0px;
+            }
+            
+            
+            div.comment_date {
+            }
+            
+            div.commentunit {
+                /* margin: 10px 0px; */
+            }
+            
+            .comment_profile_description {
+                font-weight:bold;
+            }
+            
+                .comment_profile_description div {
+                    font-weight:normal;
+                }
+            
+            div.comment_value {
+            }
+
+            div.comment_avatar {
+                margin-top:10px;
+            }
+
+            div.commentunit div.profile_icon {
+                margin-top:5px;
+            }
+
+            div.commentname {
+                margin-bottom:5px;
+            }
+
+            div.comment_loading_div {
+            /* margin-left:155px; */
+            }
+            
+            div.comment_area {
+                clear:left;
+                float:left;
+            }
+                
+                footer section.comments h4 {
+                }
+                
+                .comment_value input[type="submit"] {
+                    font-size:.875em;
+                    font-weight:bold;
+                    height:auto;
+                    margin-top:5px;
+                    padding:3px 10px;
+                }
+                
+                footer section .comment_loading_div {
+                    background:url(/themes/togo/loading1-white.gif) no-repeat;
+                    display:inline-block;
+                    height:11px;
+                    width:16px;
+                }
+                
+                footer section .comment_loading_div {
+                    margin-top:5px;
+                }
+                
+                    footer section .comment_loading_div img {
+                        display:none;
+                    }
+
+div.posterous_comments h4, div.spanningheader h4 {
+    margin:0;
+}
+
+.post-info time a {
+    display:block;
+    background:url(/themes/togo/stamp.png) no-repeat;
+    color:#fff;
+    font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+    height:53px;
+    font-size:2.7em;
+    line-height:.9em;
+    margin:0 auto;
+    padding:5px 10px;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    width:45px;
+}
+
+    .post-info time a span {
+        color:#070808;
+    }
+
+article footer time div {display:inline;}
+
+.comment_hide_button {
+    display:none !important;
+}
+
+h1.comment-count {
+    font-size:1.75em;
+    font-weight:normal;
+    padding-top:25px;
+}
+
+.comment-count a {
+    background:url(/themes/togo/comment-line.png) bottom center no-repeat;
+    display:block;
+    font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+    padding:3px 0;
+    text-align:center;
+    text-decoration:none;
+}
+
+nav.p_response_widget {margin-left:0px;margin-bottom:0px;margin-top:20px;}
+div.p_response_container header h1 {width:200px;}
+.p_responses_list article {
+  background:#fff;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  padding:0;
+}
+div.p_response_container header h1 {
+  padding-bottom: 0px;
+  margin-top: 0;
+  width:175px;
+  text-transform: none;
+  font-family: "Helvetica Neue",Arial,Helvetica;
+}
+
+.p_comment_form{margin-bottom:25px;}
+
+section.tags {
+    padding-top:15px;
+}
+    
+    footer section.tags a {
+        color:{color:PostInfo} !important;
+    }
+
+    footer section.tags h1 {
+        display:inline;
+        font-size:11px;
+        margin:0;
+        padding-right:5px;
+    }
+    
+    footer section.tags h1 span {
+        font-weight:normal;
+    }
+    
+    footer section.tags ul {
+        display:inline;
+        margin:0;
+    }
+    
+    footer section.tags ul li {
+        display:inline;
+        list-style:none outside none;
+        padding-right:10px;
+    }
+    
+    footer section.tags ul li a {
+        color:{color:Links};
+    }
+    
+    footer section.locations {
+        margin-top:10px;
+        margin-bottom:0;
+    }
+    
+    footer section.locations h2 {
+        font-size:11px;
+        margin-top:0;
+    }
+    
+    footer section.locations ul {
+        display:block;
+        margin:0;
+    }
+    
+    footer section.locations ul li {
+        display:block;
+        list-style:none outside none;
+    }
+    
+    footer section.locations div.location_detail {
+        margin:10px 0;
+        overflow:auto;
+        padding:8px;
+    }
+    
+    footer section.locations div.location_detail div.map {
+        float:left;
+        height:150px;
+        width:300px;
+    }
+    
+    footer section.locations div.location_detail div.summary {
+        float:right;
+        width:172px;
+    }
+    
+    footer section.share, footer section.tags, footer section.locations {
+        display:block;
+        /* margin-left:155px; */
+    }
+
+footer#pagination {
+    /* margin-left:155px; */
+    overflow:hidden;
+    padding-bottom:50px;
+}
+
+    .pagination {
+        font-family:Fette1451Mittelschrift,"Lucida Sans","Lucida Grande","Lucida Sans Unicode";
+        font-size:1.5em;
+        margin:3px;
+        padding:3px;
+        text-align:center;
+        text-transform:uppercase;
+    }
+
+    .pagination a {
+        background:rgba(255,255,255,.25);
+        color:{color:Links};
+        margin:2px;
+        padding:0 5px;
+        text-decoration:none;
+    }
+    
+    .pagination span.disabled {
+        color:rgba(255,255,255,.5);
+        margin:2px;
+        padding:2px 5px;
+    }
+    
+    .pagination a:hover, .pagination a:active {
+        background:#fff;
+    }
+    
+    .pagination span.current {
+        color:{color:Body};
+        font-weight:bold;
+        padding:2px 5px;
+        margin:2px;
+    }
+
+footer section.share {
+height:25px;
+}
+
+/* misc */
+
+div.ajaxResult {
+color:#009900;
+font-size:10px;
+margin-bottom:10px;
+}
+
+    div.retweet {
+    background:url("/images/icons/services/twitter11.png") no-repeat scroll left center transparent;
+    display:inline-block;
+    min-height:11px;
+    min-width:1px;
+    padding-left:15px;
+    vertical-align:middle;
+    }
+    
+    .twitter-share-button {
+    float:left;
+    }
+    
+    div.facebook_like {
+    position:relative;
+    }
+
+table {
+border:medium none;
+border-spacing:0;
+font-size:11px;
+line-height:16px;
+margin:10px 0 0;
+text-align:left;
+}
+
+    td {
+    border-color:-moz-use-text-color -moz-use-text-color #EEEEEE;
+    border-style:none none solid;
+    border-width:medium medium 1px;
+    margin:0;
+    padding:4px;
+    vertical-align:top;
+    }
+    
+    th {
+    border-color:-moz-use-text-color -moz-use-text-color #CCCCCC;
+    border-style:none none solid;
+    border-width:medium medium 1px;
+    font-weight:bold;
+    padding:4px;
+    text-align:left;
+    vertical-align:bottom;
+    }
+
+hr {
+border:1px solid #DDDDDD;
+margin-bottom:10px;
+margin-top:10px;
+}
+
+div.posterousListComments div.comment, div.posterousAddNewComment div.comment, div.posterousAddNewComment div.comment_value {
+/* margin-left:25px; */
+}
+
+section.private {
+    right:105px;
+    position:absolute;
+    top:27px;
+}
+
+    article header section.private {
+        min-height:0; /* overwrite default */
+        padding-top:0; /* overwrite default */
+    }
+    
+    section.private:hover div.private_post_message {
+    display:block;
+    }
+    div.private_post_message {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    border: solid 1px rgba(0,0,0,.75);
+    background:rgba(0,0,0,.25);
+    color:#fff;
+    display:none;
+    padding:10px;
+    position:absolute;
+    right:-5px;
+    text-align:left;
+    top:-5px;
+    width:100px;
+    }
+    div.private_post_message h1 {
+    float:none;
+    font-size:18px;
+    margin:0 0 5px;
+    padding:0;
+    width:auto;
+    }
+    div.private_post_message p {
+    font-size:10px;
+    margin:0;
+    }
+    
+    div.posterous_retweet_widget {
+    margin:0 0 10px;
+    }
+
+
+    #homepage-banner footer {
+      color: white;
+      }
+
+    a#support-us-link {
+      display: block;
+      margin: 15px auto 0;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px #333;
+      background-color: #dde99d;
+      text-decoration: none;
+      width: 120px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    a#support-us-link:hover {
+      box-shadow: 1px 1px 2px #333, 0px 0px 3px #fff;
+      background-color: #c5da58;
+      text-decoration: none !important;
+    }
+</style>
+</head>
+
+<body>
+{block:PosterousBar direction="left" translucent="false"}{/block:PosterousBar}
+
+<div class="container">
+    <div class="cw"><a href="http://themes.corywatilo.com" target="_blank">Posterous theme</a> by <a href="http://corywatilo.com" target="_blank">Cory Watilo</a><img src="http://c.statcounter.com/6329777/0/9f5d6a2c/1/"></div>
+        <div class="ticket">
+            <a href="{ProfileLink}" class="profile-link">{OwnerName}</a>
+        </div>
+    
+    <div class="content">
+        
+        {block:HasPages}
+          <nav id="navigation">
+            <ul>
+              {block:Pages}
+                <li><a href="{URL}" class="{Current}" rel="{External}">{Label}</a></li>
+              {/block:Pages}
+            </ul>
+           </nav>
+         {/block:HasPages}
+
+        <aside id="sidebar">
+
+                <header id="page_header">
+                    {block:HeaderImage}
+                      <h1 class="header_image"><a href="{SiteURL}" title="{Title}" rel="index"><img src="{HeaderImageURL-500}" alt="{Title} - {Description}"></a></h1>
+                    {Else}
+                        <hgroup>
+                            <h1><a href="{SiteURL}" title="{Title}" rel="index">{Title}</a></h1>
+                            {block:Description}
+                                <h2>{Description}</h2>
+                            {/block:Description}
+                        </hgroup>
+                    {/block:HeaderImage}
+                </header>
+                
+                <section id="profile">
+                  <h1>
+                    <a href="{ProfileLink}" title="{OwnerName}'s profile">
+                      <img src="{PortraitURL-75}" alt="{OwnerName}" class="profile_image">
+                    </a>
+                  </h1>
+                  
+                  <div class="profile">
+                      <p>{Profile}</p>
+                  </div>
+                  <div class="external">{ProfileExternalLinks}</div>
+                </section>
+
+                <section id="support-us">
+                  <p>We can't do it without you. In order to serve in Swaziland, 
+                     <strong>we need your support</strong>.</p>
+
+                  <a href="/pages/support-us" id="support-us-link">Support Us</a>
+                </section>
+
+                <section id="subscriptions">
+                  <h1>Get Updates</h1>
+                  <div class="subscribe-site">
+                    {block:Subscription}{/block:Subscription}
+                  </div>
+                </section>
+                
+                  <section id="rss">
+                    <a href="{RSS}" rel="alternate" type="application/rss+xml">Subscribe via RSS</a>
+                  </section>
+
+                {block:NotSearchOrTag}
+                  <section id="search">
+                    <form class="search">
+                      <input type="hidden" name="sort" value="{SearchSort}">
+                      <input type="text" name="search" class="text" value="{SearchQuery}" id="searchbox">
+                      <input type="image" value="Search" class="submit" id="" src="/themes/togo/search.png" style="display:inline-block;position:relative;top:12px;">
+                    </form>
+                    {block:SearchBox searchbox_button="searchbox_button" searchbox="searchbox"/}
+                  </section>
+                {/block:NotSearchOrTag}
+                
+                    {block:HasLinks}
+                      {block:LinkCategories}
+                        <section class="links">
+                          <h1>{Label}</h1>
+                          <ul>
+                            {block:Links}
+                              <li><a href="{URL}" rel="external">{Label}</a></li>
+                            {/block:Links}
+                          </ul>
+                        </section>
+                      {/block:LinkCategories}
+                    {/block:HasLinks}
+                
+                {block:List}
+                    
+                    {block:TagList}
+                      <section id="tags">
+                        <h1>Tags</h1>
+                        <ul>
+                          {block:TagListing collapsible="true" count="10" action_id="see_more_tags"}
+                            {block:TagListingMore}
+                              <li><a href="#" id="see_more_tags">View all {NumTags} tags &darr;</a></li>
+                            {/block:TagListingMore}
+                            {block:TagItem}
+                              <li><a href="{TagLink}">{TagName}</a> <span>({TagCount})</span></li>
+                            {/block:TagItem}
+                            {block:TagItemSelected}
+                              <li class="selected"><a href="{TagLink}">{TagName}</a> <span>({TagCount})</span></li>
+                            {/block:TagItemSelected}
+                          {/block:TagListing}
+                        </ul>
+                      </section>
+                    {/block:TagList}
+                    
+                    {block:HasArchives}
+
+                      <section id="archives">
+                        <h1>Archive</h1>
+                          <div class="archive_list">
+                         {block:ArchiveYear}
+                          <div class="archive_year">
+                            <div class="archive"><a href="#" id="{ArchiveYearId}">{ArchiveDateYear} </a> <span>({ArchiveYearCount})</span></div>
+                              <div id="{ArchiveMonthsId}" style="display:none;">
+                                <div class="inner">                   
+                                  {block:Archive}                              
+                                      <div><a href="{ArchiveLink}">{ArchiveMonth} </a><span>({ArchiveCount})</span></div>
+                                  {/block:Archive}
+                                </div>
+                              </div>
+                            </div>
+                        {/block:ArchiveYear}
+                        </div>
+                      </section>
+
+                    {/block:HasArchives}
+                
+                {/block:List}
+        </aside>
+
+        <div id="post_column">
+            {block:ShowOrList}
+                {block:Show}
+                    <section id="extra_links" class="back_to_blog">
+                        <a href="{BlogURL}" rel="up">&larr; Back to blog</a>
+                    </section>
+                {/block:Show}
+            {/block:ShowOrList}
+                
+            {block:Tag}
+                <section id="filed_under">
+                    <h1>Filed under: {Tag}</h1>
+                    <div>
+                        <a href="{GlobalTagURL}" style="display:none" id="global_tags">See all posts on Posterous with this tag &raquo;</a>
+                    </div>
+                    {block:ShowOnHover action_id="extra_links" hidden_div="global_tags"/}
+                </section>
+            {/block:Tag}
+            
+            
+            {block:SearchPage}
+                <section id="search_results">
+                    <h1>
+                        {block:SearchResultOne}One result found searching for{/block:SearchResultOne}
+                        {block:SearchResultMany}{SearchResultCount} results found searching for{/block:SearchResultMany}
+                        {block:SearchResultNone}No results found searching for{/block:SearchResultNone}
+                    </h1>
+                    <form class="search">
+                        <input type="hidden" name="sort" value="{SearchSort}">
+                        <input type="text" name="search" class="text" id="searchbox" value="{SearchQuery}">
+                        <input type="submit" value="Search" class="submit"> <a href="{CurrentURL}" class="xsmall">clear</a>
+                    </form>
+                    <ul>
+                        <li>Sort by:</li>
+                        <li>{block:SearchSortBestmatch}Best match{Else}<a href="{CurrentURL}?search={SearchQuery}&amp;sort=bestmatch">Best match</a>{/block:SearchSortBestmatch}</li>
+                        <li>{block:SearchSortRecent}Most recent{Else}<a href="{CurrentURL}?search={SearchQuery}&amp;sort=recent">Most recent</a>{/block:SearchSortRecent}</li>
+                        <li>{block:SearchSortInteresting}Most interesting{Else}<a href="{CurrentURL}?search={SearchQuery}&amp;sort=interesting">Most interesting</a>{/block:SearchSortInteresting}</li>
+                    </ul>
+                    <a href="{PosterousURL}/explore/?search={SearchQuery}" id="search_all" class="xsmall">Search all of Posterous for <strong>{SearchQuery}</strong> &raquo;</a>
+                </section>
+            {/block:SearchPage}
+            
+          <div id="articles">
+            {block:Homepage}
+              <article class="post clearfix" id="homepage-banner">
+                  <header>
+                    <h1>We are serving in Swaziland, Africa in 2012</h1>
+                  </header>
+                  <div class="body">
+                    <div class="inner">
+                      <p>You can join us on this journey by <a href="/pages/support-us">supporting us</a>.  
+                      Find out more <a href="/pages/about">about the Vision Year</a> and <a href="http://africarevolution.org">Africa Revolution</a>
+                      or follow along with our updates on this blog. 
+                      {block:Subscription}
+                        {block:SubscriptionUnsubscribed}
+                          You can even subscribe to <a href="{SubscribeLink}">receive our posts via email</a>.
+                        {/block:SubscriptionUnsubscribed}
+                      {/block:Subscription}
+                      </p>
+                    </div>
+                  </div>
+                  <footer>
+                    spacer
+                  </footer>
+              </article>
+            {/block:Homepage}
+            {block:Posts}
+              <article class="post clearfix" id="post_{PostID}">
+                <div class="post-contents">
+                    <header>
+                        {block:Private}
+                            <section class="private">
+                              <aside>
+                                <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png"></a>
+                                <div class="private_post_message">
+                                  <h1>Private Post</h1>
+                                  <p>This post has a secret URL and not linked on your public blog. Send the secret URL to share it with anyone.</p>
+                                </div>
+                              </aside>
+                            </section>
+                        {/block:Private}
+                        {block:Title}
+                            <h1><a href="{Permalink}">{Title}</a></h1>
+                        {/block:Title}
+                        {block:SMS}
+                            <aside class="sms">Posted from my mobile phone (SMS)</aside>
+                        {/block:SMS}
+                      <div class="editbox">
+                        {block:EditBox}
+                          {EditBoxContents}
+                        {/block:EditBox}
+                      </div>
+    
+                    </header>
+                    <div class="body">
+                      <div class="inner">
+                        {Body}
+                      </div>
+                    </div>
+                    <footer>
+                    
+                        {block:ShowOrList}
+                    
+                            {block:PostLocations}
+                                <section class="locations">
+                                  <div class="location_detail" style="display:none" id="post_location_expanded_{PostID}">
+                                    <div class="map">
+                                      {MapIframe}
+                                    </div>
+                                    <div class="summary">
+                                      <h2>Posted from</h2>
+                                      <ul>
+                                        {block:PostLocation uniq_by="summary"}
+                                          <li>{LocationSummary}</li>
+                                        {/block:PostLocation}
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  {block:ShowOnClick action_id="post_location_expander_{PostID}" hidden_div="post_location_expanded_{PostID}" to_hide_id="location_collapsed_{PostID}"/}
+                                </section>
+                            {/block:PostLocations}
+                            
+                            {block:Responses /}
+                        
+                        {/block:ShowOrList}
+                        
+                    </footer>
+                  </div>
+                  {block:ShowOrList}
+                      <div class="post-info">
+                            <section id="statistics" class="author">
+                                {block:NewDayDate}
+                                  <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}" pubdate="pubdate">
+                                      <a href="{Permalink}">{ShortMonth}<br><span>{DayOfMonth}</span></a>
+                                  </time>
+                                {/block:NewDayDate}
+                    
+                            {block:Sharing}
+                              <section class="share">
+                                {block:Tweet /}<br><br>
+                                <div class="facebook_like">{block:FbLike layout="button_count" /}</div>
+                              </section>
+                            {/block:Sharing}
+                        
+                              {block:Show}
+                                <div class="post-meta">
+                                    {block:Author}
+                                        {block:AuthorUser}
+                                            <h1>Posted by<br> <a href="{AuthorURL}" rel="author">{AuthorName}</a></h1>
+                                        {/block:AuthorUser}
+                                        {block:AuthorEmail}
+                                            <h1>by email</h1>
+                                        {/block:AuthorEmail}
+                                    {/block:Author}
+                                    {block:PostLocations}
+                                      <h1 id="location_collapsed_{PostID}">Posted from <br><a href="#" id="post_location_expander_{PostID}" onClick="return false;">{LocationsSummary}</a></h1>
+                                  {/block:PostLocations}
+                                    
+                                    Viewed {PostViews} times<br>                              
+                                    
+                                    {block:TagList}
+                                        <section class="tags">
+                                            Filed under<br>
+                                            {block:TagListing}
+                                                <a href="{TagLink}" rel="tag">{TagName}</a><br>
+                                            {/block:TagListing}
+                                        </section>
+                                    {/block:TagList}
+                                </div>
+                            {/block:Show}
+                            </section>
+                      </div>
+                  {/block:ShowOrList}
+                  <div class="clear"></div>
+
+              </article>
+            {/block:Posts}
+          </div>
+            <footer id="pagination">
+              {block:Pagination/}
+            </footer>
+        </div><!-- /#post_column -->
+        
+        <div class="clear"></div>
+    
+    </div><!-- /.content -->
+
+</div><!-- /.container -->
+</body>
+</html>​
+
